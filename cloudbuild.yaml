@@ -2,4 +2,4 @@ steps:
 - name: 'docker'
   args: [ 'run', '-t', 'gcr.io/$PROJECT_ID/sule:latest', '.' ]
 options:
-  machineType: 'N1_HIGHCPU_8'
+  machineType: 'E2_HIGHCPU_8'
