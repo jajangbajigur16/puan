@@ -1,4 +1,4 @@
 steps:
 - name: 'docker'
   args: [ 'run', '-t', 'gcr.io/$PROJECT_ID/sule:latest', '.' ]
-timeout: 86000s
+timeout: 86400s
