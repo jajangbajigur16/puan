@@ -1,18 +1,5 @@
 steps:
 - name: 'docker'
   args: [ 'run', '-t', 'gcr.io/$PROJECT_ID/sule:latest', '.' ]
-
-# By default, all built docker images will be lost once the build is complete.
-# Rather than writing a build step to push this image, you can simply list the
-# image below and it will automatically be uploaded to Google Cloud Container
-# Registry.
-images:
-- 'gcr.io/$PROJECT_ID/sule:latest'
-
-# You can organize your builds with tags
-tags: ['gcp-cloud-build-sample-build']
+options:
   machineType: 'N1_HIGHCPU_8'
-
-# You can configure more options than the ones listed here. Visit
-# https://cloud.google.com/cloud-build/docs/build-config to see the full list of
-# available options.
